@@ -1,0 +1,5 @@
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
