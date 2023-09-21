@@ -43,9 +43,6 @@
         color: var(--color-white);
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
-    #row-1{
-        height: 88dvh;
-    }
     #home-box{
         display: flex;
         flex-direction: column;
@@ -121,15 +118,16 @@
     /* #section3 starts here  */
     #section3{
         width: 100%;
-        height: 100dvh;
-        display: flex;
+        height: 120dvh;
+        margin-bottom: 20px;
     }
     #row-3{
         height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
-    .bg-fix{
-
+    .bg-fix3{
         height: 100%;
         width: 100%;
         display: flex;
@@ -137,49 +135,85 @@
         justify-content: center;
         align-items: center;
     }
-    .bg-fix:hover{
+    .bg-fix3:hover{
         cursor: pointer;
     }
-    .div-slider{
+    .div-slider31{
         border-top-right-radius: 100px;
-        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
         width: 100%;
-        height: 80%;
+        height: 90%;
         position: relative;
     }
-    .overlay{
+    .overlay31{
         border-top-right-radius: 100px;
-        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
-        right: 0;
         background-color: var(--color-bga);
         overflow: hidden;
-        width: 95%;
-        margin: 0 auto;
-        height: 0;
+        width: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 100%;
         transition: 0.5s ease;
     }
-    .overlay p{
-        width: 100%;
+    .overlay31 p{
+        height: 100%;
+        width: 40%;
         color: var(--color-black);
         position: absolute;
-        margin: 80% auto;
-        font-size: 1.5rem;
+        margin: auto 40%;
+        font-size: 2rem;
         font-family: 'Fira Sans', sans-serif;
         font-weight: 800;
         text-align: center;
-        transform: rotate(-5deg)skew(-5deg);
+        user-select: none;
     }
-    .div-slider:hover .overlay{
-        height: 99%;
+    .div-slider31:hover .overlay31{
+        width: 100%;
     }
-    /* all the backgrounds */
+    .div-slider32{
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        width: 100%;
+        height: 90%;
+        position: relative;
+    }
+    .overlay32{
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--color-bga);
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: 0.5s ease;
+        user-select: none;
+    }
+    .overlay32 p{
+        height: 100%;
+        width: 40%;
+        color: var(--color-black);
+        position: absolute;
+        margin: auto 20%;
+        font-size: 2rem;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        user-select: none;
+    }
+    .div-slider32:hover .overlay32{
+        width: 100%;
+    }
+    /* all the backgrounds of section3 */
     .bg-1{
         background:url("images/macessories.jpg");
-        background-position: center;
-        background-size: cover;
+        background-position: 50% 60%;
+        background-size:cover;
     }
     .bg-2{
         background:url("images/desk-lap-top.jpg");
@@ -188,7 +222,7 @@
     }
     .bg-3{
         background:url("images/cameraas.jpg");
-        background-position: center;
+        background-position: 50% 20%;
         background-size: cover;
     }
     .bg-4{
@@ -203,10 +237,17 @@
     }
     .bg-6{
         background:url("images/homelectronics.jpg");
-        background-position: center;
+        background-position: 50% 60%;
         background-size: cover;
     }
     /* #section4 starts here  */
+    #section4 .card img{
+        background-color: rgb(102, 51, 153);
+        margin: 5px auto;
+        border-radius: 0;
+    }
+    /* #section5 starts here   */
+    
 /* animation's keyframes are here */
 @keyframes text-left-right{
     from{
